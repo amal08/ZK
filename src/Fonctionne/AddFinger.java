@@ -28,9 +28,7 @@ public class AddFinger {
                     }
                 }
             }
-
         }
-
     }
 
     public static void registerAllRealTimeEvents() {
