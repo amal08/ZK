@@ -10,16 +10,8 @@ public class AddFinger {
         Variant machineNumber = new Variant(1, true);
         Variant dwEnrollNumber = new Variant(900, true);
         Variant connected = Dispatch.call(IService.INSTANCE, "Connect_Net", "172.16.0.124", 4370);
-        Variant Name = new Variant("Amal03", true);
-        Variant Password = new Variant("", true);
-        Variant Privilege = new Variant(0, true);
-        Variant Enabled = new Variant(true, true);
+
         TestEvents event = new TestEvents();
-
-        // add virtual user
-        System.out.println("#######create new user##########");
-        // System.out.println(Dispatch.call(IService.INSTANCE, "SSR_SetUserInfo", machineNumber, dwEnrollNumber, Name, Password, Privilege, Enabled).getBoolean());
-
         Variant dwFingerIndex = new Variant(6, true);
         Variant Flag = new Variant(1, true);
 
@@ -36,9 +28,7 @@ public class AddFinger {
                     }
                 }
             }
-
         }
-
     }
 
     public static void registerAllRealTimeEvents() {
